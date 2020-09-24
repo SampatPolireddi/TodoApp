@@ -53,8 +53,6 @@ class _HomepageState extends State<Homepage> {
                                         task :snapshot.data[index],
                                     )),
                                   );
-                                  
-
                                 },
                                 child: TaskCardWidget(
                                   title:  snapshot.data[index].title,
