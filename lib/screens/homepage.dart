@@ -49,13 +49,19 @@ class _HomepageState extends State<Homepage> {
                                 onTap: (){
                                   Navigator.push(
                                     context,
-                                    MaterialPageRoute(builder: (context)=> Taskpage(
+                                    MaterialPageRoute(
+                                        builder: (context)=> Taskpage(
                                         task :snapshot.data[index],
-                                    )),
+                                    )
+                                    ),
+                                  ).then((value){
+                                    setState(() {});
+                                  }
                                   );
                                 },
                                 child: TaskCardWidget(
                                   title:  snapshot.data[index].title,
+                                  desc: snapshot.data[index].description,
                                 ),
                               );
                             },
