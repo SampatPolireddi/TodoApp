@@ -1,6 +1,7 @@
 # todo_app
 
 A todo app for both ios and android.
+checklist not woring.(bug=isDone)
 
 ## Getting Started
 
